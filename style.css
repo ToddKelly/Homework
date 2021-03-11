@@ -10,15 +10,18 @@ body {
 }
 
 .header {
-    
+    display: flex;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #0b2c3d;
     color: #ffffff;
+    flex-wrap: wrap
+;
 }
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     /* Align the child elements to the right side of the parent */
     justify-content: flex-end;
     background-color: #0b2c3d;
@@ -95,24 +98,25 @@ p {
     color: #ffffff;
     font-size: 36px;
     flex: 2 1 400px;
+    ;
     }
 
 
 .work { 
+    object-fit: contain;
     margin-bottom: 20px;
-    padding: 50px;
-    height: 600px;
+    padding: 50px
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2a607c;
     color: #ffffff;
     font-size: 36px;
     flex: 2 1 200px;
+    flex-wrap: wrap;
 }
 
 .calculator {
-    display: inline-block;
-    width: 800px;
-    margin-top: 20px;
+   
+    margin: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -120,37 +124,41 @@ p {
     font-size: 100px;
     background-image: url("./images/download.jfif");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     flex: 2 1 200px;
+    flex-wrap: wrap;
 }
 
 .coming-soon {
     display: inline-block;
     margin: 20px;
     padding: 50px;
-    height: 125px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-height: 250px;;
+    font-family:bold;'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #010005;
     font-size: 25px;
     background-image: url("./images/comingsoon.jfif");
     background-repeat: repeat;
     background-size: content-box;
-    border: rgb(0, 0, 8);
+    border: 50px rgb(0, 0, 8);
     flex: 2 1 200px;
 }
 
 .resume {
-    margin-bottom: 20px;
+    object-fit: contain;
     padding: 50px;
-    height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2a607c;
     color: #ffffff;
     font-size: 36px;
     flex: 2 1 200px;
+    flex-wrap:wrap;
+    object-position: inherit;
 }
 
 .contact-me {
+
     margin-bottom: 20px;
     padding: 50px;
     height: 125px;
@@ -158,11 +166,13 @@ p {
     background-color: #2a607c;
     color: #ffffff;
     font-size: 36px;
-    flex: 2 1 200px;
+   
 }
 .calculator img {
-    max-height: 500px;
+    max-height: 250px;
     flex: 2 1 200px;
+    object-fit: contain;
+    flex-wrap: wrap;
 }
 
 
@@ -172,8 +182,9 @@ p {
 }
 
 .resume img {
-    max-height: 200px;
+    height: 200px;
     flex: 2 1 200px;
+    object-fit:inherit ;
 }
 
 .about-me h2 {
@@ -197,7 +208,8 @@ p {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    text-align:center;
+    align-content:center;
 }
 
 .footer h2 {
